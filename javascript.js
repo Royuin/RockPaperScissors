@@ -62,4 +62,20 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
+
+function game() {
+  
+  for (let i = 0; i < 5; i++) {
+    let playerSelection = window.prompt('Choose your weapon');
+  
+  playRound(playerSelection, computerSelection);
+
+  
+  
+  }
+  
+
+  
+}
+
 game();
