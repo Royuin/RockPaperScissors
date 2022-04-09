@@ -16,31 +16,31 @@ const computerSelection = computerPlay();
 function playRound(playerSelection, computerSelection) {
   if (playerSelection.toLowerCase() === 'rock')  {
     if (computerSelection === 'rock') {
-      console.log('Tie try again!');
+      return 'Tie try again!';
     } else if (computerSelection === 'paper') {
-      console.log('Computer wins paper beats rock!');
+      return 'Computer wins paper beats rock!';
     } else if (computerSelection === 'scissors') {
-      console.log('You win rock beats scissors');
+      return 'You win rock beats scissors';
     }
     
 } 
   else if (playerSelection.toLowerCase() === 'paper') {
     if (computerSelection === 'rock') {
-      console.log('You win paper beats rock!');
+      return 'You win paper beats rock!';
     } else if (computerSelection === 'paper') {
-      console.log('Tie try again!');
+      return 'Tie try again!';
     } else if (computerSelection === 'scissors') {
-      console.log('Computer wins scissors beats rock');
+      return 'Computer wins scissors beats rock';
     }
     
 }
   else if (playerSelection.toLowerCase() === 'scissors') { 
     if (computerSelection === 'rock') {
-      console.log('Computer wins rock beats scissors!');
+      return 'Computer wins rock beats scissors!';
     } else if (computerSelection === 'paper') {
-      console.log('You win scissors beats paper');
+      return 'You win scissors beats paper';
     } else if (computerSelection === 'scissors)') {
-      console.log('Tie try again!');
+      return 'Tie try again!';
     }
 }
 }
