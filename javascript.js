@@ -1,7 +1,7 @@
-let rpsArray = ['Rock', 'Paper', 'Scissors'];
+let rpsArray = ['rock', 'paper', 'scissors'];
 
 function computerPlay() {
-  let rpsArray = ['Rock', 'Paper', 'Scissors'];
+  let rpsArray = ['rock', 'paper', 'scissors'];
 
   let result = rpsArray[(Math.random() * rpsArray.length) | 0];
 
@@ -14,10 +14,10 @@ const playerSelection = window.prompt('Choose your weapon');
 const computerSelection = computerPlay();
 
 function playRound(playerSelection, computerSelection) {
-  if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'Rock') {
+  if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'rock') {
     console.log('Tie try again!');
-} else if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'Paper') {
+} else if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'paper') {
     console.log('Computer wins!');
-} else if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'Scissors') { console.log('Player wins!');
+} else if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'scissors') { console.log('Player wins!');
 }
 }
