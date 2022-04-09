@@ -17,7 +17,7 @@ function playRound(playerSelection, computerSelection) {
   if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'rock') {
     console.log('Tie try again!');
 } else if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'paper') {
-    console.log('Computer wins!');
-} else if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'scissors') { console.log('Player wins!');
+    console.log('Computer wins paper beats Rock!');
+} else if (playerSelection.toLowerCase() === 'rock' && computerSelection === 'scissors') { console.log('Player wins rock beats scissors!');
 }
 }
