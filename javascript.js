@@ -1,3 +1,5 @@
+let rpsArray = ['Rock', 'Paper', 'Scissors'];
+
 function computerPlay() {
   let rpsArray = ['Rock', 'Paper', 'Scissors'];
 
@@ -6,3 +8,7 @@ function computerPlay() {
   return result
   
 }
+
+const playerSelection = window.prompt('Choose your weapon');
+
+const computerSelection = computerPlay();
