@@ -3,21 +3,18 @@ let rpsArray = ['rock', 'paper', 'scissors'];
 function computerPlay() {
   let rpsArray = ['rock', 'paper', 'scissors'];
 
-  let result = rpsArray[(Math.random() * rpsArray.length) | 0];
+   let result = rpsArray[(Math.random() * rpsArray.length) | 0];
 
   return result
   
 }
 
 
-
-const computerSelection = computerPlay();
-
-
+let computerSelection = computerPlay();
 
 
 function playRound(playerSelection, computerSelection) {
-
+  computerSelection = computerPlay();
   if (playerSelection.toLowerCase() === 'rock')  {
       if (computerSelection === 'rock') {
            tie = console.log('Tie try again!');
@@ -56,7 +53,7 @@ function playRound(playerSelection, computerSelection) {
           return tie;
       }
   } 
-  computerPlay();
+    
 }   
 
 function game() {
@@ -64,9 +61,7 @@ function game() {
   for (let i = 0; i < 5; i++) {
     let playerSelection = window.prompt('Choose your weapon rock, paper, or scissors?');
     playRound(playerSelection, computerSelection)
-    
-    computerPlay();
-    
+  
   }
   
 }
