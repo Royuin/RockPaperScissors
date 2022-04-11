@@ -16,39 +16,39 @@ const computerSelection = computerPlay();
 function playRound(playerSelection, computerSelection) {
     if (playerSelection.toLowerCase() === 'rock')  {
       if (computerSelection === 'rock') {
-          let tie = console.log('Tie try again!');
+           tie = console.log('Tie try again!');
           return tie;
       } else if (computerSelection === 'paper') {
-          let lose = console.log('Computer wins paper beats rock!');
+           lose = console.log('Computer wins paper beats rock!');
           return lose;
       } else if (computerSelection === 'scissors') {
-          let win = console.log('You win rock beats scissors!');
+           win = console.log('You win rock beats scissors!');
           return win;
       }
     
   } 
     else if (playerSelection.toLowerCase() === 'paper') {
       if (computerSelection === 'rock') {
-        let win = console.log('You win paper beats rock!');
+         win = console.log('You win paper beats rock!');
         return win;
       } else if (computerSelection === 'paper') {
-          let tie = console.log('Tie try again!');
+           tie = console.log('Tie try again!');
           return tie;
       } else if (computerSelection === 'scissors') {
-          let lose = console.log('Computer wins scissors beats rock!');
+           lose = console.log('Computer wins scissors beats rock!');
           return lose;
       }
     
   }
     else if (playerSelection.toLowerCase() === 'scissors') { 
       if (computerSelection === 'rock') {
-        let lose = console.log('Computer wins rock beats scissors!');
+         lose = console.log('Computer wins rock beats scissors!');
         return lose;
       } else if (computerSelection === 'paper') {
-          let win = console.log('You win scissors beats paper');
+           win = console.log('You win scissors beats paper');
           return win;
       } else if (computerSelection === 'scissors)') {
-          let tie = console.log('Tie try again!')
+           tie = console.log('Tie try again!')
           return tie;
       }
   } 
