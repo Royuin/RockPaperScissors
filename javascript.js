@@ -13,8 +13,12 @@ function computerPlay() {
 
 const computerSelection = computerPlay();
 
+
+
+
 function playRound(playerSelection, computerSelection) {
-    if (playerSelection.toLowerCase() === 'rock')  {
+
+  if (playerSelection.toLowerCase() === 'rock')  {
       if (computerSelection === 'rock') {
            tie = console.log('Tie try again!');
           return tie;
@@ -52,6 +56,7 @@ function playRound(playerSelection, computerSelection) {
           return tie;
       }
   } 
+  computerPlay();
 }   
 
 function game() {
@@ -59,7 +64,8 @@ function game() {
   for (let i = 0; i < 5; i++) {
     let playerSelection = window.prompt('Choose your weapon rock, paper, or scissors?');
     playRound(playerSelection, computerSelection)
-
+    
+    computerPlay();
     
   }
   
