@@ -62,7 +62,7 @@ function game() {
     let playerSelection = window.prompt('Choose your weapon rock, paper, or scissors?');
     playRound(playerSelection, computerSelection)
   
-  }
+    }
   
 }
 
