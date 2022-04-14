@@ -87,6 +87,10 @@ function game() {
     playRound(playerSelection, computerSelection)
      
     }
+  while (playerScore < 3 && computerScore < 3) {
+      let playerSelection = window.prompt('Choose your weapon rock, paper, or scissors?');
+      playRound(playerSelection, computerSelection)
+    }
   
     
 }
