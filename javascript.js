@@ -83,6 +83,9 @@ function game() {
   playerScore = 0;
   
   for (let i = 0; i < 5; i++) {
+    if (playerScore >= 3) break;
+    else if (computerScore >= 3) break;
+   
     let playerSelection = prompt('Choose your weapon rock, paper, or scissors?');
     playRound(playerSelection, computerSelection)
      
@@ -91,11 +94,12 @@ function game() {
       let playerSelection = prompt('Choose your weapon rock, paper, or scissors?');
       playRound(playerSelection, computerSelection)
     }
-  if (playerScore >= 3) {
-    alert('Player wins the game!');
-  } else if (computerScore >= 3) {
-      alert('Computer wins the game!');
-    }
+    if (playerScore >= 3) {
+      alert('Player wins the game!');
+  
+    } else if (computerScore >= 3) {
+        alert('Computer wins the game!');
+      }
     
 }
 
