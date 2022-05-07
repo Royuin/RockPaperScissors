@@ -124,6 +124,7 @@ scissorsButton.addEventListener('click', (e) => {
   playRound('scissors', computerSelection);
 });
 
-
+playerScoreText.textContent = `Players score: ${playerScore}`;
+computerScoreText.textContent = `Computers score: ${computerScore}`;
 
                                      
