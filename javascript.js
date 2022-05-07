@@ -106,6 +106,7 @@ function game() {
 const rockButton = document.querySelector('.rockButton');
 const paperButton = document.querySelector('.paperButton');
 const scissorsButton = document.querySelector('.scissorsButton');
+const results = document.querySelector('.results');
 
 rockButton.addEventListener('click', (e) => {
   playRound('rock', computerSelection);
@@ -118,5 +119,6 @@ paperButton.addEventListener('click', (e) => {
 scissorsButton.addEventListener('click', (e) => {
   playRound('scissors', computerSelection);
 });
+
 
                                      
