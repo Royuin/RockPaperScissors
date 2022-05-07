@@ -28,16 +28,16 @@ function playRound(playerSelection, computerSelection) {
   
   if (playerSelection.toLowerCase() === 'rock')  {
     if (computerSelection === 'rock') {
-           tie = console.log('Tie try again!');
+          tie = results.textContent = 'Tie try again!';
           result = tie;
           return tie;
       } else if (computerSelection === 'paper') {
-           lose = console.log('Computer wins paper beats rock!');
+           lose = results.textContent = 'Computer wins paper beats rock!';
           result = lose;
           computerScore++;
           return result;
       } else if (computerSelection === 'scissors') {
-           win = console.log('You win rock beats scissors!');
+          win = results.textContent = 'You win rock beats scissors!';
           result = win;
           playerScore++;
           return win;
@@ -46,16 +46,16 @@ function playRound(playerSelection, computerSelection) {
   } 
     else if (playerSelection.toLowerCase() === 'paper') {
       if (computerSelection === 'rock') {
-         win = console.log('You win paper beats rock!');
+         win = results.textContent = 'You win paper beats rock!';
         result = win;
         playerScore++;
         return win;
       } else if (computerSelection === 'paper') {
-           tie = console.log('Tie try again!');
+           tie = results.textContent = 'Tie try again!';
             result = tie          
            return result;
       } else if (computerSelection === 'scissors') {
-           lose = console.log('Computer wins scissors beats rock!');
+           lose = results.textContent = 'Computer wins scissors beats rock!';
           result = lose;
           computerScore++;
           return lose;
@@ -64,17 +64,17 @@ function playRound(playerSelection, computerSelection) {
   }
     else if (playerSelection.toLowerCase() === 'scissors') { 
       if (computerSelection === 'rock') {
-         lose = console.log('Computer wins rock beats scissors!');
+         lose = results.textContent = 'Computer wins rock beats scissors!';
         result = lose;
         computerScore++;
         return lose
       } else if (computerSelection === 'paper') {
-           win = console.log('You win scissors beats paper');
+           win = results.textContent = 'You win scissors beats paper';
           result = win;
           playerScore++;
           return win;
       } else if (computerSelection === 'scissors)') {
-           tie = console.log('Tie try again!')
+           tie = results.textContent = 'Tie try again!';
           result = tie;
           return tie;
       }
