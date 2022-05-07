@@ -112,4 +112,8 @@ rockButton.addEventListener('click', (e) => {
   playRound('rock', computerSelection);
 });
 
+paperButton.addEventListener('click', (e) => {
+  playRound('paper', computerSelection);
+});
+
                                      
