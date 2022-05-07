@@ -115,4 +115,8 @@ paperButton.addEventListener('click', (e) => {
   playRound('paper', computerSelection);
 });
 
+scissorsButton.addEventListener('click', (e) => {
+  playRound('scissors', computerSelection);
+});
+
                                      
