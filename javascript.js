@@ -103,4 +103,7 @@ function game() {
     
 }
 
-game();
+const rockButton = document.querySelector('.rockButton');
+const paperButton = document.querySelector('.paperButton');
+const scissorsButton = document.querySelector('.scissorsButton');
+                                     
