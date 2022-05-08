@@ -117,18 +117,36 @@ rockButton.addEventListener('click', (e) => {
   playRound('rock', computerSelection);
   playerScoreText.textContent = `Players score: ${playerScore}`;
 computerScoreText.textContent = `Computers score: ${computerScore}`;
+if (playerScore >= 3) {
+  gameWinner.textContent = 'Player wins the game!';
+
+} else if (computerScore >= 3) {
+    gameWinner.textContent = 'Computer wins the game!';
+  }
 });
 
 paperButton.addEventListener('click', (e) => {
   playRound('paper', computerSelection);
   playerScoreText.textContent = `Players score: ${playerScore}`;
 computerScoreText.textContent = `Computers score: ${computerScore}`;
+if (playerScore >= 3) {
+  gameWinner.textContent = 'Player wins the game!';
+
+} else if (computerScore >= 3) {
+    gameWinner.textContent = 'Computer wins the game!';
+  }
 });
 
 scissorsButton.addEventListener('click', (e) => {
   playRound('scissors', computerSelection);
   playerScoreText.textContent = `Players score: ${playerScore}`;
 computerScoreText.textContent = `Computers score: ${computerScore}`;
+if (playerScore >= 3) {
+  gameWinner.textContent = 'Player wins the game!';
+
+} else if (computerScore >= 3) {
+    gameWinner.textContent = 'Computer wins the game!';
+  }
 });
 
 
