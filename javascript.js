@@ -7,6 +7,7 @@ const scissorsButton = document.querySelector('.scissorsButton');
 const results = document.querySelector('.results');
 const playerScoreText = document.querySelector('.playerScore');
 const computerScoreText = document.querySelector('.computerScore');
+const gameWinner = document.querySelector('.gameWinner');
 
 
 let rpsArray = ['rock', 'paper', 'scissors'];
