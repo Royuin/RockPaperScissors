@@ -114,17 +114,20 @@ function game() {
 
 rockButton.addEventListener('click', (e) => {
   playRound('rock', computerSelection);
+  playerScoreText.textContent = `Players score: ${playerScore}`;
+computerScoreText.textContent = `Computers score: ${computerScore}`;
 });
 
 paperButton.addEventListener('click', (e) => {
   playRound('paper', computerSelection);
+  playerScoreText.textContent = `Players score: ${playerScore}`;
+computerScoreText.textContent = `Computers score: ${computerScore}`;
 });
 
 scissorsButton.addEventListener('click', (e) => {
   playRound('scissors', computerSelection);
+  playerScoreText.textContent = `Players score: ${playerScore}`;
+computerScoreText.textContent = `Computers score: ${computerScore}`;
 });
 
-playerScoreText.textContent = `Players score: ${playerScore}`;
-computerScoreText.textContent = `Computers score: ${computerScore}`;
 
-                                     
