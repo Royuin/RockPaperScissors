@@ -10,6 +10,10 @@ const computerScoreText = document.querySelector(".computerScore");
 const gameWinner = document.querySelector(".gameWinner");
 const restartbtn = document.querySelector(".restart");
 
+restartbtn.addEventListener("click", () => {
+  window.location.reload();
+});
+
 let rpsArray = ["rock", "paper", "scissors"];
 
 function computerPlay() {
