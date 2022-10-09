@@ -8,9 +8,9 @@ const results = document.querySelector(".results");
 const playerScoreText = document.querySelector(".playerScore");
 const computerScoreText = document.querySelector(".computerScore");
 const gameWinner = document.querySelector(".gameWinner");
-const restartbtn = document.querySelector(".restart");
+const restartBtn = document.querySelector(".restart");
 
-restartbtn.addEventListener("click", () => {
+restartBtn.addEventListener("click", () => {
   window.location.reload();
 });
 
